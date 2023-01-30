@@ -1,8 +1,8 @@
 body {
     font-family: Georgia;
     font-size: 16px;
-    margin: 0 auto;   /* center content */
-    max-width: 800px; /* limit width */
+    margin: 0 auto;   
+    max-width: 800px; 
     line-height: 1.5;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -12,6 +12,11 @@ body {
     margin-bottom: 12px;
   }
   
+  p > a {
+  padding-left: 5px;
+  padding-right: 5px;
+  }
+
   h1, h2, h3 {
     font-weight: 400;
   }
