@@ -42,6 +42,12 @@ body {
     margin-bottom: 32px;
     text-align: center;
   }
+
+  .c-img {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;    
+  }
   
   #footer {
     margin-top: 64px;
