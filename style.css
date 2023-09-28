@@ -1,49 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* заголовок h2 */
+@font-face {
+  font-family: CormorantInfant-MediumItalic;
+  src: url(./fonts/CormorantInfant-MediumItalic.ttf);
+}
+/* основной текст */
+@font-face {
+  font-family: Overpass-VariableFont_wght;
+  src: url(./fonts/Overpass-VariableFont_wght.ttf);
+}
+/* заголовок h1 */
+@font-face {
+  font-family: RussoOne-Regular; 
+  src: url(./fonts/RussoOne-Regular.ttf);
+}
+
 body {
-    font-family: Georgia;
-    font-size: 16px;
-    margin: 0 auto;   
-    max-width: 800px; 
-    line-height: 1.5;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-  
-  p {
-    margin-bottom: 12px;
-  }
-  
-  p > a {
+  font-family: Overpass-VariableFont_wght, sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 1900px;
+  line-height: 1.5;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  display: grid;
+  align-items: start;
+  gap: 5px;
+  grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+  grid-template-columns: 30% 70%;
+}
+
+#header {
+  grid-area: header;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+#menu {
+  grid-area: menu;
+  padding: 20px;
+  background-color: rgb(227, 227, 252);
+}
+#main {
+  grid-area: main;
+  padding: 30px;
+}
+#footer {
+  grid-area: footer;
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+p > a {
   padding-left: 5px;
   padding-right: 5px;
-  }
+}
 
-  h1, h2, h3 {
-    font-weight: 400;
-  }
-  
-  h1 {
-    font-size: 36px;
-    margin-bottom: 0;
-  }
-  
-  h2 {
-  font-size: 32px;
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h1 {
+  font-family: RussoOne-Regular;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: CormorantInfant-MediumItalic, serif;
+  font-size: 2rem;
   border-bottom: 1px #808080;
   margin-bottom: 8px;
-  }
-  
-  .header-title {
+}
+h3 {
+  font-family: CormorantInfant-MediumItalic, serif;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: blueviolet;
+}
+
+.header-title {
   font-size: 18px;
   border-bottom: none;
   margin-bottom: 10px;
-  }
-  
-  #header {
-    margin-bottom: 32px;
-    text-align: center;
-  }
-  
-  #footer {
-    margin-top: 64px;
-    text-align: center;
-  }
+}
+
+img {
+  max-width: 100%;
+}
+
+ul li {
+padding-bottom: 9px;
+list-style: none;
+line-height: 0.98;
+}
+
+.info {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20%;
+}
