@@ -125,6 +125,5 @@ line-height: 0.98;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
-  gap: 20%;
+  flex-direction: column;
 }
