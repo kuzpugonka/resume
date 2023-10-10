@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Резюме</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header id="header">
-      <h1>Софья Терехова</h1>
-      <h2 class="header-title">
-        Веб-программист / Frontend-разработчик / HTML-верстальщик
-      </h2>
+      <div class="header__container">
+        <div class="logo">
+          <p class="logo-title">kuzpugonka</p>
+        </div>
+        <div class="title">
+          <h1>Софья Терехова</h1>
+          <h2 class="header-title">
+            Веб-программист / Frontend-разработчик / HTML-верстальщик
+          </h2>
+        </div>
+        <div class="btn">
+          <button><a href="#modal">Напишите мне</a></button>
+        </div>
+      </div>
     </header>
     <aside id="menu">
       <div class="foto">
@@ -43,20 +53,23 @@
     </aside>
     <main id="main">
       <p>
-        Программирование понравилось еще в&nbsp;колледже, когда изучала
-        алгоритмы. В&nbsp;2016 году создала свой первый сайт в&nbsp;конструкторе
-        uCoz. В&nbsp;2018 году прошла онлайн курс &laquo;HTML и&nbsp;CSS&raquo;
-        для редактирования кода своего сайта. В&nbsp;2022 году решила сменить
-        профессию на&nbsp;верстальщика.
+        Программирование понравилось еще в&nbsp;колледже, когда изучала основы
+        информатики, языки BASIC и Pascal. В&nbsp;2016 году создала свой первый
+        сайт в&nbsp;конструкторе uCoz. В&nbsp;2018 году прошла онлайн курс
+        &laquo;HTML и&nbsp;CSS&raquo; для&nbsp;редактирования кода своего сайта.
+        В&nbsp;2022 году решила сменить профессию на&nbsp;фронтенд-разработчика.
       </p>
-      <section>
+      <article>
         <h2>Опыт работы</h2>
         <p>Релевантного опыта работы не имею.</p>
         <p>
-          C 2021 года по&nbsp;настоящее время нахожусь в&nbsp;декретном отпуске, самообучаюсь верстке, выполняю учебные проекты, нахожусь в&nbsp;активном поиске коммерческого опыта разработки сайтов.
+          C 2021 года по&nbsp;настоящее время нахожусь в&nbsp;декретном отпуске,
+          самообучаюсь верстке, выполняю учебные проекты, нахожусь
+          в&nbsp;активном поиске коммерческого опыта разработки сайтов.
         </p>
         <p>
-          До 2021 года общий стаж работы составляет более 29 лет на разных должностях, в том числе руководящих.
+          До 2021 года общий стаж работы составляет более 29 лет на разных
+          должностях, в том числе руководящих.
         </p>
         <h2>Навыки</h2>
         <ul>
@@ -76,8 +89,8 @@
           <li>✔️Tilda</li>
           <li>✔️Размещение сайта на хостинге, установка домена</li>
         </ul>
-      </section>
-      <section>
+      </article>
+      <article>
         <h2>Образование</h2>
         <ul>
           <li>
@@ -85,55 +98,65 @@
             программе "Фронтенд", 2024
           </li>
           <li>
-            ✔️Онлайн-курсы: Хекслет, Нетология, Вебкадеми, Glo Академия, Я.Практикум, WayUp, Methed, SkillBox, Stepik и другие бесплатные мини-курсы и интенсивы
+            ✔️Онлайн-курсы: Хекслет, Нетология, Вебкадеми, Glo Академия,
+            Я.Практикум, WayUp, Methed, SkillBox, Stepik и другие бесплатные
+            мини-курсы и интенсивы
           </li>
           <li>
-            ✔️Курс повышения квалификации в Томском Государственном университете по программе "Web-программист: с нуля до первых проектов", 2023
+            ✔️Курс повышения квалификации в Томском Государственном университете
+            по программе "Web-программист: с нуля до первых проектов", 2023
           </li>
           <li>✔️Высшее педагогическое образование, 2008</li>
         </ul>
-      </section>
-      <section>
+      </article>
+      <article>
         <h2>Другие навыки и увлечения</h2>
         <ul>
-          <li>✔️Вёрстка</li>
+          <li>✔️Веб-дизайн</li>
+          <li>✔️Чат-боты для телеграм</li>
           <li>✔️Генеалогия</li>
           <li>✔️Любительская игра на гитаре</li>
         </ul>
-      </section>
+      </article>
     </main>
     <footer id="footer">
       <div class="container footer__container">
         <h2>Софья Терехова</h2>
-        <div class="info">
+        <div class="footer__info">
           <p>© 2022–2023, kuzpugonka</p>
           <p>Телеграм <a href="https://t.me/kuzpugonka">@kuzpugonka</a></p>
           <p>Дизайн и разработка Софьи Тереховой</p>
         </div>
       </div>
     </footer>
-    <div class="modal">
-      <form class="modal__form" action="">
-        <fieldset>
-          <div class="input-name">            
-          <label for="name">Ваше имя</label>
-          <input type="text" id="name" placeholder="Введите имя">
-          </div>
+    <div class="modal" id="modal">
+      <div class="modal__wrap">
+        <form class="modal__form" action="">
+          <fieldset>
+            <h3>Оставьте отзыв или&nbsp;задайте вопрос</h3>
+            <div class="modal__form-input">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" placeholder="Введите имя" />
+            </div>
 
-          <div class="input-mail">            
-          <label for="mail">Ваш email</label>
-          <input type="email" id="mail" placeholder="Введите email">
-          </div>
+            <div class="modal__form-input">
+              <label for="mail">Ваш email</label>
+              <input type="email" id="mail" placeholder="Введите email" />
+            </div>
 
-          
-          <div class="input-name">            
-            <label for="message">Ваше сообщение</label>
-            <textarea type="text" id="message" placeholder="Введите сообщение"></textarea>
-          </div>
+            <div class="modal__form-input">
+              <label for="message">Ваше сообщение</label>
+              <textarea
+                type="text"
+                id="message"
+                placeholder="Введите сообщение"
+              ></textarea>
+            </div>
 
-          <button type="submit">Отправить</button>
-        </fieldset>
-      </form>
+            <button type="submit"><a href="#header"></a>Отправить</button>
+          </fieldset>
+        </form>
+      </div>
     </div>
   </body>
 </html>
