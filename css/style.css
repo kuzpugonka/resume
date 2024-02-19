@@ -10,8 +10,8 @@
 }
 
 body {
-  width: 1260px;
-  margin: 60px auto;
+  width: 1400px;
+  margin-top: 60px;
   line-height: 1.4;
 }
 
@@ -20,13 +20,14 @@ body {
   /* margin: 0 auto; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 56px;
 }
 
 /* header */
 .header {
-  width: 100%;
+  width: 100%;  
+  padding-left: 180px;
 }
 
 .header__title {
@@ -49,21 +50,25 @@ body {
 
 .img {
   display: block;
-  max-width: 264px;
-  max-height: 264px;
+  /* max-width: 264px; */
+  max-height: 269px;
 }
 
 .header_social {
   display: flex;
   list-style-type: none;
-  margin: 20px;
+  margin: 20px 0 13px;
+  gap: 12px;
 }
 
 .social-icon_vk,
 .social-icon_telegram,
 .social-icon_whatsup {
   width: 32px;
-  height: 23px;
+  /* height: 23px; */
+}
+.contacts p {
+  line-height: normal;
 }
 .phone {
     margin-bottom: 12px;
@@ -77,18 +82,19 @@ body {
 /* info */
 .info {
   background-color: #f8f8fd;
+  line-height: 1.35;
 }
 .info-box {
   margin-top: 16px;
   margin-bottom: 32px;
-  padding: 12px 24px;
+  padding: 4px 24px;
   display: flex;
   gap: 24px;
 }
 
 .info-list {
   min-width: 20%;
-  padding: 12px 24px 12px 0;
+  padding: 12px 30px 12px 0;
   margin-left: 50px;
   font-weight: 300;
   color: #9999a3;
@@ -118,8 +124,11 @@ body {
 .my-work__box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   gap: 20px;
+}
+.my-work__box:last-child {
+  margin-bottom: 20px;
 }
 
 .my-work__box_list p:last-child {
@@ -128,21 +137,26 @@ body {
 }
 
 .my-work__box_content {
-  max-width: 64%;
+  max-width: 66%;
+  margin-top: 8px;
+  margin-right: 5px;
 }
 
 .my-work__box_content p:last-child {
   padding-top: 20px;
 }
+.padding-right {
+  padding-right: 158px;
+}
 
 .main-text {
   background-color: #a9a9fd;
-  border-radius: 8px;
-  padding: 8px 12px;
+  border-radius: 10px;
+  padding: 10px 12px;
 }
 
 .more {
-  margin-left: 12px;
+  margin-left: 8px;
   background-color: #f1a9fd;
 }
 
@@ -170,4 +184,8 @@ body {
 .language__item span {
   padding: 8px 12px;
   background-color: #f5f5fa;
+}
+
+.about__desc:not(:last-child) {
+  margin-bottom: 8px;
 }
